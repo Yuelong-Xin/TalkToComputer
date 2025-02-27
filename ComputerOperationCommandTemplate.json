@@ -1,0 +1,31 @@
+{
+  "actions": [
+    {
+      "type": "mouse",
+      "action": "move",
+      "x": 100,
+      "y": 200,
+      "duration": 1
+    },
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left"
+    },
+    {
+      "type": "keyboard",
+      "action": "write",
+      "text": "Hello, world!"
+    },
+    {
+      "type": "keyboard",
+      "action": "hotkey",
+      "keys": ["ctrl", "s"]
+    },
+    {
+      "type": "icon",
+      "action": "click",
+      "image_path": "path/to/icon.png"
+    }
+  ]
+}
