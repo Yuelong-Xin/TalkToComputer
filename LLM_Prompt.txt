@@ -1,0 +1,70 @@
+Model: 
+ChatGPT
+-----------------------------------------------------------------
+Prompt:
+Help me open the Baidu website, convert this sentence into the operation process of the mouse, keyboard, and icon position on the screen used in computer operation, the format is as follows, please convert
+
+{
+  "actions": [
+    {
+      "type": "mouse",
+      "action": "move",
+      "x": 100,
+      "y": 200,
+      "duration": 1
+    },
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left"
+    },
+    {
+      "type": "keyboard",
+      "action": "write",
+      "text": "Hello, world!"
+    },
+    {
+      "type": "keyboard",
+      "action": "hotkey",
+      "keys": ["ctrl", "s"]
+    },
+    {
+      "type": "icon",
+      "action": "click",
+      "image_path": "path/to/icon.png"
+    }
+  ]
+}
+-----------------------------------------------------------------
+Output:
+{
+  "actions": [
+    {
+      "type": "mouse",
+      "action": "move",
+      "x": 300,
+      "y": 50,
+      "duration": 1
+    },
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left"
+    },
+    {
+      "type": "keyboard",
+      "action": "write",
+      "text": "www.baidu.com"
+    },
+    {
+      "type": "keyboard",
+      "action": "press",
+      "key": "enter"
+    },
+    {
+      "type": "icon",
+      "action": "wait",
+      "image_path": "path/to/baidu_logo.png"
+    }
+  ]
+}
